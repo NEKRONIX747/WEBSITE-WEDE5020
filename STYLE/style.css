@@ -1,0 +1,131 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f2eb;
+    color: #3a2e2a;
+}
+
+/* Header styling */
+header {
+    background-color: #5a3e2b;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+header img.logo { height: 60px; width: auto; }
+
+/* Navigation menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+nav ul li { margin: 0 15px; }
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+nav ul li a:hover, nav ul li a.active {
+    background-color: #f2a65a; color: #3a2e2a;
+}
+
+/* Main content styling */
+main { max-width: 1200px; margin:auto; padding:30px 20px; }
+h1,h2,h3 { color:#5a3e2b; }
+p { line-height:1.6; }
+
+/* Image boxes */
+.image-box {
+    background-color: #fff5e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    min-height: 150px;
+    text-align: center;
+}
+.image-box.centered { margin: 20px auto; }
+
+/* Info boxes */
+.info-box {
+    background-color: #fffaf0;
+    border: 1px solid #d6c3b5;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+/* Message form styling */
+.message-form form {
+    display: flex;
+    flex-direction: column;
+}
+.message-form input, .message-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d6c3b5;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.message-form button {
+    background-color: #5a3e2b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.message-form button:hover { background-color: #f2a65a; color: #3a2e2a; }
+
+/* Product cards */
+.products .product-grid { display:flex; flex-wrap:wrap; gap:20px; justify-content:space-between; }
+.product-card {
+    background-color: #fff5e6;
+    border-radius:10px;
+    padding:15px;
+    width:30%;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    text-align:center;
+}
+.product-card img { width:100%; border-radius:10px; }
+.product-card details summary { cursor:pointer; font-weight:bold; color:#5a3e2b; }
+
+/* Events calendar */
+.calendar-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:8px; }
+.calendar-cell { padding:12px; background-color:#fff; border-radius:8px; text-align:center; position:relative; box-shadow:0 2px 4px rgba(0,0,0,0.05);}
+.calendar-cell.empty { background:transparent; box-shadow:none; }
+.event-marker { position:absolute; bottom:5px; right:5px; color:#cc4b4b; font-size:1.5em; }
+.danger-btn { background-color:#cc4b4b; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer; display:inline-block; margin-top:10px; }
+
+/* Footer styling */
+footer { text-align:center; background-color:#5a3e2b; color:white; padding:15px 10px; margin-top:30px; }
+
+/* Responsive */
+@media(max-width:1024px){ .image-box,.info-box,.product-card{width:48%;} }
+@media(max-width:768px){
+    nav ul{flex-direction:column;align-items:center;}
+    nav ul li{margin:10px 0;}
+    .image-box,.info-box,.product-card{width:100%;}
+    .calendar-grid{grid-template-columns:repeat(4,1fr);}
+}
+@media(max-width:480px){
+    header, footer{text-align:center;padding:10px;}
+    main{padding:15px;}
+}
