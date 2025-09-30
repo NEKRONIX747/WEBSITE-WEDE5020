@@ -103,3 +103,16 @@ the next three screenshots are of my css style sheet
 <img width="1863" height="977" alt="Screenshot 2025-09-30 221141" src="https://github.com/user-attachments/assets/288074ea-fedf-4476-9ba6-529140850ffb" />
 
 this is my style sheet i have utilised a lot of commentary in this as i needed to break up the different pages throughout the coding process this helped with remaining organised a lot of what i have done here is to style the website as well as the image boxes i use as containers for my images i also did a lot of font styling as well as colour styling and used containers to create decorations such as my logo and at the last screen shot this is where i implemented responsive design  
+
+
+REFERENCE LIST 
+Louisa Ludewig littlesthomestead@gmail.com
+Nicole De Fleuriot De La ColinÌere littlesthomestead@gmail.com
+owner: SHEIN
+url: https://za.shein.com/?onelink=10/4ivi7j3cevpg&requestId=olw-52m2qep6ljii&url_from=affiliate_af_b_68_98_0&click_id=gx-row-shein-shein-ssd&cdn_rsite=ak&ref=www&rep=dir&ret=za
+owner: TAKEALOT
+URL: https://www.takealot.com/?gclsrc=aw.ds&gad_source=1&gad_campaignid=19495861195&gclid=CjwKCAjw_-3GBhAYEiwAjh9fUKL9Roms0KrYGI0IsUtl7cGyBKVtEQBngbXq35OjP9jID537AzaPoBoCXVwQAvD_BwE
+owner: amazon
+URL: https://www.amazon.co.za/?&tag=zatxtabkgode-21&ref=pd_sl_7rwefcbkep_e&adgrpid=172901824200&hvpone=&hvptwo=&hvadid=721507631651&hvpos=&hvnetw=g&hvrand=2328793040473026295&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1028720&hvtargid=kwd-10573980&hydadcr=9973_2329363&mcid=&language=en_ZA&gad_source=1
+
+
