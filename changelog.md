@@ -25,3 +25,27 @@ i have also included a logo on every page as this was done through the style she
 
 responsivce design :
 i have used the @ media code to create responsive desing to have a hamburger style menu when the website is in a smaller format
+
+Home Page:
+i have added a lightbox gallery as well as added some newer images and changed the logo 
+
+About Us Page:
+this i have changed entirely moved the paragraphs into a more zig zag formatted as well as broke the paragraphs with images
+
+Products page:
+added a dynamic search function as well as changed the format to a column format this is easier to view
+
+Events page:
+updated the event calendar to look a bit more professional as well as removed some image boxes and added some newer image in.
+
+contact us page:
+this i have changed quite a bit i added in a dynamic map so people know where we are based as well as removed some image boxes and added some images in.
+
+Lightbox gallery:
+i have implemented a lightbox gallery to the home page:
+
+dynamic map:
+i have added a dynamic map into the contactus page
+
+dynamic search function:
+i haqve also added a dynamic search function to my products page.
