@@ -116,3 +116,162 @@ owner: amazon
 URL: https://www.amazon.co.za/?&tag=zatxtabkgode-21&ref=pd_sl_7rwefcbkep_e&adgrpid=172901824200&hvpone=&hvptwo=&hvadid=721507631651&hvpos=&hvnetw=g&hvrand=2328793040473026295&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1028720&hvtargid=kwd-10573980&hydadcr=9973_2329363&mcid=&language=en_ZA&gad_source=1
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+FEEDBACK AND WHAT IVE CHANGED.
+
+In part 2 I had no feedback due to achieving 100% for the website however I did loose marks for late submission which couldn’t be helped due to loosing all my data and having to start again on the day of the submission so I had noting to change per say however I did indeed add a whole bunch of things which will be fully described in my changelog on Github.
+
+WHAT IVE ADDED 
+
+I have added a lightbox gallery to my home page as well as changed the layout of my about us page as well as adding a dynamic search function to the products page and I have added a working dynamic map onto the contact us page I will provide screenshots below of what the pages look like I will also be doing a YouTube video on the functionality and design of my website as well as showing the code behind the website that link will be at the end of this document. the reason I will be doing this as my screenshot function is no longer working so therefore I will be showing the code in video format. Here are the screen shots of the websit.
+
+ 
+
+This is my welcome message.
+<img width="1821" height="928" alt="Opera Snapshot_2025-11-03_231118_home html" src="https://github.com/user-attachments/assets/68b46077-b26b-4774-9c9a-94dbb9712532" />
+
+ 
+
+Just below that we have the rest of the home page and the light box gallery 
+<img width="1701" height="919" alt="Opera Snapshot_2025-11-03_231154_home html" src="https://github.com/user-attachments/assets/4fcf56b7-a16a-4c87-a51a-82cbc11fa6e0" />
+
+ 
+As well as the customer favourites.
+<img width="1844" height="941" alt="Opera Snapshot_2025-11-03_231219_home html" src="https://github.com/user-attachments/assets/68b1924d-a740-4750-b0fd-a149a9feed31" />
+
+ 
+This is the end of the page with the copyright at the bottom of the page.
+
+ <img width="1828" height="934" alt="Opera Snapshot_2025-11-03_231231_home html" src="https://github.com/user-attachments/assets/2927ccbb-9a89-4ffa-8cdf-d404227ebb9c" />
+
+
+This is the about us page which has been changed to be more professional and to give breaks between reading.
+
+ <img width="1841" height="856" alt="Opera Snapshot_2025-11-03_231250_aboutus html" src="https://github.com/user-attachments/assets/a7760e51-d313-44ab-b742-5c04fb4e59db" />
+
+
+This is the mission statement at the bottom of the page and some images to make it look pretty.
+
+ <img width="1859" height="941" alt="Opera Snapshot_2025-11-03_231307_aboutus html" src="https://github.com/user-attachments/assets/9af890f8-6b29-45f0-9fa6-eae622bd5fbd" />
+
+Here we have the products page with the dynamic search feature as well as dropdowns on the products for more information.
+
+ <img width="1839" height="937" alt="Opera Snapshot_2025-11-03_231330_products html" src="https://github.com/user-attachments/assets/6d344843-2107-4cde-acae-4cb40cee4fa6" />
+
+ 
+This is the rest of the products on the products page all drop downs work and the search feature works you will see that in the functionality section of this document.
+<img width="1849" height="944" alt="Opera Snapshot_2025-11-03_231344_products html" src="https://github.com/user-attachments/assets/280df981-a1d1-4324-a24e-d1c9c31d2727" />
+
+ 
+This is my events page with a working calendar to mark out events.
+ <img width="1844" height="949" alt="Opera Snapshot_2025-11-03_231355_products html" src="https://github.com/user-attachments/assets/02fee7b7-92a6-45cd-98e7-d7ca118bc8be" />
+
+This is the calendar you will see how it works in the functionality section of this document as well as the youtube video.
+ 
+<img width="1840" height="944" alt="Opera Snapshot_2025-11-03_231409_events html" src="https://github.com/user-attachments/assets/828cb128-254d-49f9-951f-1b7ce51fc4b4" />
+
+This is the bottom of the page and it has an image to make it look nice.
+
+ <img width="1850" height="951" alt="Opera Snapshot_2025-11-03_231423_events html" src="https://github.com/user-attachments/assets/acb6c4da-69bc-4188-806e-34b2a7d20bfb" />
+
+
+This is the contact us page this is where my form and map are those will also be shown in the functionality of this document and youtube video.
+
+ 
+<img width="1846" height="941" alt="Opera Snapshot_2025-11-03_231437_events html" src="https://github.com/user-attachments/assets/e5deeec7-1955-4420-ad2d-b84ee17b3139" />
+
+Here is some basic information about the owners as well as contact details and operating times.
+
+ <img width="1823" height="847" alt="Opera Snapshot_2025-11-03_231451_contactus html" src="https://github.com/user-attachments/assets/33668edf-a29f-4e10-8d7c-0e5fb9cfacc5" />
+
+This is the last image in the design part of the document this is my contact form as well as the map.
+<img width="1856" height="955" alt="Opera Snapshot_2025-11-03_231504_contactus html" src="https://github.com/user-attachments/assets/4aa8ede2-a196-43a2-afd9-dbf506e2c665" />
+
+As for colour scheme I have stuck with my original design as stipulate by the owners to have earthy tones and autumn colours and combining the two with a professional approach to make the business website more attractive and easy to use for the average user.
+<img width="1850" height="945" alt="Opera Snapshot_2025-11-03_231516_contactus html" src="https://github.com/user-attachments/assets/5f48cdaf-ef58-4b3e-bc6c-2942ec48eb83" />
+
+FUNCTIONALITY
+
+ 
+
+Here we have a look at the dynamic search function as you can see when I start typing something that related keywords and letters will show the product that is being searched if you want to see it in action watch the youtube video as well as what happens when you don’t type anything related.
+ 
+
+This is what happens when you pick a category and no related items are in that category as you can see the category system works as intended.
+<img width="1817" height="834" alt="Opera Snapshot_2025-11-03_231539_products html" src="https://github.com/user-attachments/assets/6caa5d4a-f979-4ab3-b65a-0da5f215e4eb" />
+
+
+
+
+This is my calendar.
+ <img width="884" height="610" alt="Opera Snapshot_2025-11-03_231626_products html" src="https://github.com/user-attachments/assets/91163b2f-8952-44a0-9ceb-25d6f54c706d" />
+
+As you can see all fields have to be filled in.
+ <img width="1225" height="237" alt="Opera Snapshot_2025-11-03_231637_events html" src="https://github.com/user-attachments/assets/e0a980c2-630e-420f-b5f5-7508409605ce" />
+
+
+Here I have added an event for January tenth.
+
+ <img width="1190" height="230" alt="Opera Snapshot_2025-11-03_231708_events html" src="https://github.com/user-attachments/assets/75661775-06bc-44df-8aa9-8fb6c22f1d28" />
+
+This event is marked with a star on the calendar.
+<img width="1110" height="413" alt="Opera Snapshot_2025-11-03_231734_events html" src="https://github.com/user-attachments/assets/23041074-4485-4d8c-8b79-5f7191be6c99" />
+
+ 
+
+This is my contact form 
+ 
+<img width="1051" height="880" alt="Opera Snapshot_2025-11-03_231746_events html" src="https://github.com/user-attachments/assets/49f351d4-8769-4535-9477-467114a16574" />
+
+All fields have to be filled.
+
+ <img width="1235" height="495" alt="Opera Snapshot_2025-11-03_231808_contactus html" src="https://github.com/user-attachments/assets/b26e8017-1654-4c1c-9845-20213430b63e" />
+
+
+As well as necessary symbols must be added.
+ 
+<img width="1274" height="582" alt="Opera Snapshot_2025-11-03_231835_contactus html" src="https://github.com/user-attachments/assets/ea9359e4-8301-4a96-a510-7cd4bc8028c7" />
+
+This is the map with the marker in the center
+<img width="1245" height="555" alt="Opera Snapshot_2025-11-03_231853_contactus html" src="https://github.com/user-attachments/assets/b3175eba-702d-4e64-a7cd-0075ce8f2405" />
+
+ 
+
+And this is the map with the marker on the same location just I have moved the map.
+
+ <img width="1232" height="733" alt="Opera Snapshot_2025-11-03_231907_contactus html" src="https://github.com/user-attachments/assets/2f9b3532-3773-4529-9c9a-df0ea655501b" />
+<img width="1227" height="687" alt="Opera Snapshot_2025-11-03_231917_contactus html" src="https://github.com/user-attachments/assets/666affc4-80fa-45dd-9a49-46268c48661c" />
+
+<img width="1449" height="808" alt="Opera Snapshot_2025-11-03_231938_products html" src="https://github.com/user-attachments/assets/3e27fae6-cbf5-476f-8e29-3c74f981e404" />
+
+This is showing the function of the products page dropdown.
+LINKS 
+Github :
+YOUTUBE:  https://youtu.be/t8HY-MJFZlQ
+
+
+REFERENCE LIST
+REFERENCE LIST Louisa Ludewig littlesthomestead@gmail.com 
+Nicole De Fleuriot De La ColinÌere littlesthomestead@gmail.com
+ owner: SHEIN 
+url:
+ https://za.shein.com/?onelink=10/4ivi7j3cevpg&requestId=olw-52m2qep6ljii&url_from=affiliate_af_b_68_98_0&click_id=gx-row-shein-shein-ssd&cdn_rsite=ak&ref=www&rep=dir&ret=za 
+owner: TAKEALOT 
+URL: https://www.takealot.com/?gclsrc=aw.ds&gad_source=1&gad_campaignid=19495861195&gclid=CjwKCAjw_-3GBhAYEiwAjh9fUKL9Roms0KrYGI0IsUtl7cGyBKVtEQBngbXq35OjP9jID537AzaPoBoCXVwQAvD_BwE
+ owner: amazon 
+URL:
+ https://www.amazon.co.za/?&tag=zatxtabkgode-21&ref=pd_sl_7rwefcbkep_e&adgrpid=172901824200&hvpone=&hvptwo=&hvadid=721507631651&hvpos=&hvnetw=g&hvrand=2328793040473026295&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1028720&hvtargid=kwd-10573980&hydadcr=9973_2329363&mcid=&language=en_ZA&gad_source=1
+
+
