@@ -3,13 +3,39 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us - The Littlest Homestead</title>
+  <title>Contact Us - The Littlest Homestead | Get in Touch</title>
+  <meta name="description" content="Contact The Littlest Homestead bakery in Scotsville, Pietermaritzburg. Reach out to Liam and Louisa Roberts for orders, inquiries, or custom baking requests.">
+  <meta name="keywords" content="contact bakery, order baked goods, custom cakes, Pietermaritzburg bakery contact, bakery inquiries, custom orders, Scotsville bakery">
+  <meta name="author" content="The Littlest Homestead">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Contact The Littlest Homestead Bakery">
+  <meta property="og:description" content="Get in touch with The Littlest Homestead for orders, inquiries, or custom baking requests in Pietermaritzburg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.thelittlesthomestead.com/contactus.html">
+  <meta property="og:image" content="https://www.thelittlesthomestead.com/IMG/IMG-20250929-WA0019.jpg">
+  <meta property="og:site_name" content="The Littlest Homestead">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact The Littlest Homestead Bakery">
+  <meta name="twitter:description" content="Get in touch for orders, inquiries, or custom baking requests.">
+  <meta name="twitter:image" content="https://www.thelittlesthomestead.com/IMG/IMG-20250929-WA0019.jpg">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.thelittlesthomestead.com/contactus.html">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="IMG/WhatsApp Image 2025-09-29 at 18.50.32_33d127bc.jpg">
+  
   <link rel="stylesheet" href="STYLE/style.css"/>
+  <script src="SCRIPT/script.js" defer></script>
 </head>
 <body>
   <!-- Header with logo and navigation -->
   <header>
-    <img src="IMG/logo.JPG" alt="The Littlest Homestead Logo" class="logo">
+    <img src="IMG/WhatsApp Image 2025-09-29 at 18.50.32_33d127bc.jpg" alt="The Littlest Homestead Logo - Artisan Bakery" class="logo">
     <nav>
       <ul>
         <li><a href="home.html">Home</a></li>
@@ -25,7 +51,9 @@
     <h1>Contact Us</h1>
 
     <!-- Top image box -->
-    <div class="image-box"><img src="IMG/IMG-20250929-WA0019.jpg"></div>
+    <div class="image-box">
+      <img src="IMG/WhatsApp Image 2025-09-29 at 18.50.32_33d127bc.jpg" alt="Contact The Littlest Homestead for delicious baked goods">
+    </div>
 
     <!-- Owner Information -->
     <div class="info-box">
@@ -36,30 +64,85 @@
     <!-- Location Information -->
     <div class="info-box">
       <h2>Location</h2>
-      <p>Hayfields, Pietermaritzburg, South Africa</p>
+      <p><strong>Address:</strong><br>
+      24 Phipson Road<br>
+      Scotsville<br>
+      Pietermaritzburg<br>
+      KwaZulu-Natal<br>
+      3201</p>
+      <p><strong>Service Area:</strong> We deliver throughout Pietermaritzburg and surrounding areas</p>
     </div>
 
-    <!-- Middle image box -->
-    <div class="image-box centered"><img src="IMG/IMG-20250929-WA0020.jpg"></div>
+    <!-- Contact Methods -->
+    <div class="info-box">
+      <h2>Get In Touch</h2>
+      <div class="contact-methods">
+        <div class="contact-method">
+          <h3>📞 Phone</h3>
+          <p>+27 (0)76 123 4567</p>
+        </div>
+        <div class="contact-method">
+          <h3>📧 Email</h3>
+          <p>orders@thelittlesthomestead.com</p>
+        </div>
+        <div class="contact-method">
+          <h3>🕒 Hours</h3>
+          <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+          <p>Saturday: 8:00 AM - 2:00 PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+      </div>
+    </div>
 
     <!-- Message Form -->
     <div class="info-box message-form">
       <h2>Send Us a Message</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required id="contactName">
+        <input type="email" placeholder="Your Email" required id="contactEmail">
+        <input type="tel" placeholder="Your Phone Number" id="contactPhone">
+        <select id="contactSubject" required>
+          <option value="">Select Subject</option>
+          <option value="order">Place an Order</option>
+          <option value="inquiry">General Inquiry</option>
+          <option value="custom">Custom Order Request</option>
+          <option value="event">Event Catering</option>
+          <option value="other">Other</option>
+        </select>
+        <textarea placeholder="Your Message" rows="5" required id="contactMessage"></textarea>
         <button type="submit">Send Message</button>
       </form>
     </div>
 
-    <!-- Bottom image box -->
-    <div class="image-box"><img src="IMG/IMG-20250827-WA0002.jpg"></div>
+    <!-- Embedded Google Maps Section -->
+    <div class="info-box map-container">
+      <h2>Find Us</h2>
+      <p>Visit us at 24 Phipson Road in Scotsville, Pietermaritzburg. We're conveniently located near the city center!</p>
+      
+      <!-- Embedded Google Map -->
+      <div id="embedded-map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3468.5380941410394!2d30.401799611888627!3d-29.617111075037865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6bc4c4c072217%3A0xe46f984d8dde2999!2s24%20Phipson%20Rd%2C%20Scottsville%2C%20Pietermaritzburg%2C%203201!5e0!3m2!1sen!2sza!4v1762204050311!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          width="100%" 
+          height="400" 
+          style="border:0; border-radius: 12px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Map showing The Littlest Homestead location at 24 Phipson Road, Scotsville, Pietermaritzburg">
+        </iframe>
+      </div>
+      
+      <div class="map-actions">
+        <button id="getDirections" class="map-btn">Get Directions</button>
+        <button id="viewLarger" class="map-btn">View Larger Map</button>
+      </div>
+    </div>
 
   </main>
 
   <footer>
-    <p>&copy; 2025 The Littlest Homestead. All Rights Reserved.</p>
+    <p>&copy; 2025 The Littlest Homestead. All Rights Reserved. | Contact Us Today</p>
   </footer>
 </body>
 </html>

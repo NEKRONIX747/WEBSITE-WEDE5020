@@ -3,12 +3,38 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home - The Littlest Homestead</title>
+  <title>Home - The Littlest Homestead | Artisan Bakery & Homemade Treats</title>
+  <meta name="description" content="Welcome to The Littlest Homestead - Family-run artisan bakery offering homemade cinnamon buns, cakes, and delicious baked goods in Pietermaritzburg.">
+  <meta name="keywords" content="artisan bakery, homemade cakes, cinnamon buns, Pietermaritzburg bakery, family bakery, fresh baked goods, South African bakery">
+  <meta name="author" content="The Littlest Homestead">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="The Littlest Homestead - Artisan Bakery">
+  <meta property="og:description" content="Family-run artisan bakery offering homemade treats, cinnamon buns, and delicious baked goods in Pietermaritzburg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.thelittlesthomestead.com/home.html">
+  <meta property="og:image" content="https://www.thelittlesthomestead.com/IMG/logo.JPG">
+  <meta property="og:site_name" content="The Littlest Homestead">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Littlest Homestead - Artisan Bakery">
+  <meta name="twitter:description" content="Family-run artisan bakery offering homemade treats in Pietermaritzburg.">
+  <meta name="twitter:image" content="https://www.thelittlesthomestead.com/IMG/logo.JPG">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.thelittlesthomestead.com/home.html">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="IMG/WhatsApp Image 2025-09-29 at 18.50.32_33d127bc.jpg">
+  
   <link rel="stylesheet" href="STYLE/style.css"/>
+  <script src="SCRIPT/script.js" defer></script>
 </head>
 <body>
   <header>
-    <img src="IMG/logo.JPG" alt="The Littlest Homestead Logo" class="logo">
+    <img src="IMG/WhatsApp Image 2025-09-29 at 18.50.32_33d127bc.jpg" alt="The Littlest Homestead Logo - Artisan Bakery" class="logo">
     <nav>
       <ul>
         <li><a href="home.html" class="active">Home</a></li>
@@ -22,35 +48,90 @@
 
   <main class="home">
     <h1>Welcome to The Littlest Homestead</h1>
-    <div class="image-box"><img src="IMG/IMG-20250929-WA0008.jpg"></div>
+    <div class="image-box">
+      <img src="IMG/cinnamon-rolls-2.jpg" alt="Fresh baked goods from our kitchen">
+    </div>
     <div class="home-summary">
-      <h2>History</h2>
+      <h2>Our Story</h2>
       <p>
         Founded out of passion and love for the art of baking, our company was established in 2019 as Bakeables. 
         Though COVID-19 forced us to pause, our dedication never wavered. We now proudly operate as The Littlest Homestead, 
         delivering the most delectable delights from our family-run kitchen.
       </p>
 
-      <h2>Mission</h2>
+      <h2>Our Mission</h2>
       <p>
         Our mission is to bring joy and share happiness through our baked goods, spreading smiles and fulfillment with every order. 
         We aim to grow our business and one day open a local bakery offering delicious treats at affordable prices.
       </p>
     </div>
-/* this is where i have added the Favorites from the products page */
-    <h2>Our Favorites</h2>
-    <div class="product-row">
-      <div class="image-box"><img src="IMG/IMG-20250827-WA0004.jpg"></div>
-      <div class="image-box"><img src="IMG/IMG-20250827-WA0003.jpg"></div>
-      <div class="image-box"><img src="IMG/IMG-20250929-WA0018.jpg"></div>
-      <div class="image-box"><img src="IMG/IMG-20250827-WA0007.jpg"></div>
+
+    <h2>Our Gallery</h2>
+    <div class="gallery-section">
+      <p>Click on any image below to view it in our lightbox gallery:</p>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="IMG/platter-of-caramel-pecan-rolls-1200x800.jpg" alt="Caramel and Pecan Cinnamon Bun" data-index="0">
+        </div>
+        <div class="gallery-item">
+          <img src="IMG/saps-alphapharm-1.jpg" alt="Beer Box Cake" data-index="1">
+        </div>
+        <div class="gallery-item">
+          <img src="IMG/O6A0313.jpg" alt="Milk Tart Tartlet" data-index="2">
+        </div>
+        <div class="gallery-item">
+          <img src="IMG/Blueberry-Cream-Cheese-Tartlets-Blueberry-Cheesecake-Mini-Tarts5.jpg" alt="Blueberry Cheesecake Tart" data-index="3">
+        </div>
+        <div class="gallery-item">
+          <img src="IMG/istockphoto-1487845790-612x612.jpg" alt="Our Bakery Kitchen" data-index="4">
+        </div>
+        <div class="gallery-item">
+          <img src="IMG/pngtree-cinnamon-buns-with-icing-on-a-dark-background-image_2538070.jpg" alt="Bakery Products Display" data-index="5">
+        </div>
+        <div class="gallery-item">
+          <img src="IMG/2579101_Cente_MINI_CONFETTI_Cakes_399-127956616d404189a1ffa5f31c447ddd.jpg" alt="Mini Cakes" data-index="6">
+        </div>
+        <div class="gallery-item">
+          <img src="IMG/WGC-Chocolate-Chip-Cinnamon-Rolls-2-copy.jpg" alt="Chocolate Chip Cinnamon Bun" data-index="7">
+        </div>
+      </div>
     </div>
 
-    <div class="image-box centered"><img src="IMG/IMG-20250929-WA0009.jpg"></div>
+    <h2>Customer Favorites</h2>
+    <div class="product-row">
+      <div class="image-box">
+        <img src="IMG/platter-of-caramel-pecan-rolls-1200x800.jpg" alt="Caramel Pecan Cinnamon Bun">
+      </div>
+      <div class="image-box">
+        <img src="IMG/WGC-Chocolate-Chip-Cinnamon-Rolls-2-copy.jpg" alt="Chocolate Chip Cinnamon Bun">
+      </div>
+      <div class="image-box">
+        <img src="IMG/2579101_Cente_MINI_CONFETTI_Cakes_399-127956616d404189a1ffa5f31c447ddd.jpg" alt="Assorted Mini Cakes">
+      </div>
+      <div class="image-box">
+        <img src="IMG/rolls4-640x930.jpg" alt="Coconut Almond Cinnamon Bun">
+      </div>
+    </div>
+
+    <div class="image-box centered">
+      <img src="IMG/cinnamon_buns_10634_16x9.jpg" alt="Fresh bakery display">
+    </div>
   </main>
 
+  <!-- Lightbox Overlay -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close">&times;</span>
+      <button class="lightbox-nav lightbox-prev">&#10094;</button>
+      <button class="lightbox-nav lightbox-next">&#10095;</button>
+      <img class="lightbox-image" src="" alt="">
+      <div class="lightbox-caption"></div>
+      <div class="lightbox-counter"></div>
+    </div>
+  </div>
+
   <footer>
-    <p>&copy; 2025 The Littlest Homestead. All Rights Reserved.</p>
+    <p>&copy; 2025 The Littlest Homestead. All Rights Reserved. | Artisan Bakery in Pietermaritzburg</p>
   </footer>
 </body>
 </html>

@@ -3,12 +3,38 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Events - The Littlest Homestead</title>
+  <title>Events Calendar - The Littlest Homestead | Bakery Events & Specials</title>
+  <meta name="description" content="Check our events calendar for bakery specials, seasonal offerings, and community events at The Littlest Homestead in Pietermaritzburg.">
+  <meta name="keywords" content="bakery events, calendar, specials, seasonal offerings, community events, baking workshops, Pietermaritzburg events">
+  <meta name="author" content="The Littlest Homestead">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Events Calendar - The Littlest Homestead Bakery">
+  <meta property="og:description" content="Check our events calendar for bakery specials, seasonal offerings, and community events.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.thelittlesthomestead.com/events.html">
+  <meta property="og:image" content="https://www.thelittlesthomestead.com/IMG/logo.JPG">
+  <meta property="og:site_name" content="The Littlest Homestead">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Events Calendar - The Littlest Homestead Bakery">
+  <meta name="twitter:description" content="Check our events calendar for bakery specials and community events.">
+  <meta name="twitter:image" content="https://www.thelittlesthomestead.com/IMG/logo.JPG">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.thelittlesthomestead.com/events.html">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="IMG/WhatsApp Image 2025-09-29 at 18.50.32_33d127bc.jpg">
+  
   <link rel="stylesheet" href="STYLE/style.css"/>
+  <script src="SCRIPT/script.js" defer></script>
 </head>
 <body>
   <header>
-    <img src="IMG/logo.JPG" alt="The Littlest Homestead Logo" class="logo">
+    <img src="IMG/WhatsApp Image 2025-09-29 at 18.50.32_33d127bc.jpg" alt="The Littlest Homestead Logo - Artisan Bakery" class="logo">
     <nav>
       <ul>
         <li><a href="home.html">Home</a></li>
@@ -24,7 +50,9 @@
     <h1>Events Calendar</h1>
 
     <!-- Top image box -->
-    <div class="image-box"><img src="IMG/logo.JPG"></div>
+    <div class="image-box">
+      <img src="IMG/WhatsApp Image 2025-09-29 at 18.50.32_33d127bc.jpg" alt="The Littlest Homestead Events and Specials">
+    </div>
 
     <!-- Event display -->
     <section id="event-list">
@@ -54,79 +82,19 @@
     </div>
 
     <!-- Middle image box -->
-    <div class="image-box centered"><img src="IMG/logo.JPG" alt=""></div>
+    <div class="image-box centered">
+      <img src="IMG/WhatsApp Image 2025-09-29 at 14.45.18_e716c8fd.jpg" alt="Upcoming Events at The Littlest Homestead">
+    </div>
 
     <!-- Bottom image box -->
-    <div class="image-box"><img src="IMG/IMG-20250929-WA0016.jpg" alt=""></div>
+    <div class="image-box">
+      <img src="IMG/WhatsApp Image 2025-09-29 at 14.45.18_47cb08b4.jpg" alt="Special Event Bakery Items">
+    </div>
 
   </main>
 
   <footer>
-    <p>&copy; 2025 The Littlest Homestead. All Rights Reserved.</p>
+    <p>&copy; 2025 The Littlest Homestead. All Rights Reserved. | Check Our Events Calendar</p>
   </footer>
-
-  <script>
-    const eventForm = document.getElementById('event-form');
-    const eventDate = document.getElementById('event-date');
-    const eventText = document.getElementById('event-text');
-    const eventList = document.getElementById('event-list');
-    const calendarTitle = document.getElementById('calendar-title');
-    const calendarGrid = document.getElementById('calendar-grid');
-    const clearEventsBtn = document.getElementById('clear-events');
-    const prevMonthBtn = document.getElementById('prev-month');
-    const nextMonthBtn = document.getElementById('next-month');
-
-    let events = JSON.parse(localStorage.getItem('events')) || [];
-    let currentDate = new Date();
-
-    function saveEvents() { localStorage.setItem('events', JSON.stringify(events)); }
-
-    function renderEvents() {
-      eventList.innerHTML = '';
-      if(events.length===0) eventList.innerHTML='<p>No events added yet.</p>';
-      else {
-        events.forEach((e,index)=>{
-          const div=document.createElement('div');
-          div.className='event-item';
-          div.innerHTML=`<strong>${e.date}</strong>: ${e.text} <button onclick="removeEvent(${index})">Remove</button>`;
-          eventList.appendChild(div);
-        });
-      }
-    }
-
-    function removeEvent(index){ events.splice(index,1); saveEvents(); renderEvents(); renderCalendar(); }
-
-    function renderCalendar(){
-      const year=currentDate.getFullYear();
-      const month=currentDate.getMonth();
-      const monthName=currentDate.toLocaleString('default',{month:'long'});
-      calendarTitle.textContent=`${monthName} ${year}`;
-      calendarGrid.innerHTML='';
-      const firstDay=new Date(year,month,1).getDay();
-      const daysInMonth=new Date(year,month+1,0).getDate();
-      for(let i=0;i<firstDay;i++){ const blank=document.createElement('div'); blank.className='calendar-cell empty'; calendarGrid.appendChild(blank);}
-      for(let day=1;day<=daysInMonth;day++){
-        const cell=document.createElement('div');
-        cell.className='calendar-cell';
-        cell.textContent=day;
-        const dateStr=`${String(day).padStart(2,'0')}/${String(month+1).padStart(2,'0')}/${year}`;
-        events.forEach(ev=>{if(ev.date===dateStr){
-          const mark=document.createElement('span');
-          mark.className='event-marker';
-          mark.textContent='★';
-          mark.style.fontSize='1.5em';
-          mark.style.color='#cc4b4b';
-          cell.appendChild(mark);
-        }});
-        calendarGrid.appendChild(cell);
-      }
-    }
-
-    prevMonthBtn.addEventListener('click',()=>{currentDate.setMonth(currentDate.getMonth()-1);renderCalendar();});
-    nextMonthBtn.addEventListener('click',()=>{currentDate.setMonth(currentDate.getMonth()+1);renderCalendar();});
-    eventForm.addEventListener('submit',e=>{e.preventDefault();events.push({date:eventDate.value,text:eventText.value}); saveEvents(); renderEvents(); renderCalendar(); eventForm.reset();});
-    clearEventsBtn.addEventListener('click',()=>{if(confirm('Are you sure?')){events=[]; saveEvents(); renderEvents(); renderCalendar();}});
-    renderEvents(); renderCalendar();
-  </script>
 </body>
 </html>

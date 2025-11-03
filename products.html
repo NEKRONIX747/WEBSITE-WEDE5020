@@ -3,12 +3,38 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Products - The Littlest Homestead</title>
+  <title>Products - The Littlest Homestead | Artisan Cinnamon Buns & Baked Goods</title>
+  <meta name="description" content="Discover our delicious artisan baked goods including cinnamon buns, cakes, tartlets, and more. Fresh homemade treats from The Littlest Homestead bakery.">
+  <meta name="keywords" content="cinnamon buns, artisan baked goods, homemade cakes, milk tart, cheesecake tartlets, bakery products, fresh pastries, South African baked goods">
+  <meta name="author" content="The Littlest Homestead">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Our Products - Artisan Baked Goods & Cinnamon Buns">
+  <meta property="og:description" content="Discover our delicious artisan baked goods including cinnamon buns, cakes, and tartlets from The Littlest Homestead.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.thelittlesthomestead.com/products.html">
+  <meta property="og:image" content="https://www.thelittlesthomestead.com/IMG/IMG-20250929-WA0016.jpg">
+  <meta property="og:site_name" content="The Littlest Homestead">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our Products - Artisan Baked Goods & Cinnamon Buns">
+  <meta name="twitter:description" content="Discover our delicious artisan baked goods including cinnamon buns, cakes, and tartlets.">
+  <meta name="twitter:image" content="https://www.thelittlesthomestead.com/IMG/IMG-20250929-WA0016.jpg">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.thelittlesthomestead.com/products.html">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="IMG/WhatsApp Image 2025-09-29 at 18.50.32_33d127bc.jpg">
+  
   <link rel="stylesheet" href="STYLE/style.css"/>
+  <script src="SCRIPT/script.js" defer></script>
 </head>
 <body>
   <header>
-    <img src="IMG/logo.JPG" alt="The Littlest Homestead Logo" class="logo">
+    <img src="IMG/WhatsApp Image 2025-09-29 at 18.50.32_33d127bc.jpg" alt="The Littlest Homestead Logo - Artisan Bakery" class="logo">
     <nav>
       <ul>
         <li><a href="home.html">Home</a></li>
@@ -23,70 +49,138 @@
   <main class="products">
     <h1>Delicious Delights</h1>
 
-    <div class="product-grid">
+    <!-- Search and Filter Section -->
+    <div class="search-filter-container">
+      <div class="search-box">
+        <input type="text" id="productSearch" placeholder="Search products... (e.g., 'cinnamon', 'cake', 'tart')" aria-label="Search products">
+        <button type="button" id="searchButton">
+          <span>🔍</span>
+        </button>
+        <button type="button" id="clearSearch" class="clear-btn">Clear</button>
+      </div>
+      
+      <div class="filter-options">
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+          <option value="cinnamon">Cinnamon Buns</option>
+          <option value="cake">Cakes</option>
+          <option value="tart">Tarts & Tartlets</option>
+          <option value="mini">Mini Treats</option>
+        </select>
+        
+        <select id="sortOptions">
+          <option value="name">Sort by Name</option>
+          <option value="category">Sort by Category</option>
+          <option value="popular">Most Popular</option>
+        </select>
+      </div>
+      
+      <div class="search-results-info">
+        <span id="resultsCount">Showing all products</span>
+      </div>
+    </div>
+
+    <div class="product-grid" id="productGrid">
       <!-- Cinnamon Buns -->
-      <div class="product-card">
-        <img src="IMG/IMG-20250929-WA0016.jpg">>
+      <div class="product-card" data-category="cinnamon" data-name="caramel pecan bun" data-popularity="5">
+        <img src="IMG/platter-of-caramel-pecan-rolls-1200x800.jpg" alt="Caramel and Pecan Cinnamon Bun with rich caramel glaze">
         <details>
           <summary>Caramel & Pecan Bun</summary>
-          <p>Rich caramel with crunchy pecans baked to perfection.</p>
+          <p>Rich caramel with crunchy pecans baked to perfection in our signature soft cinnamon bun.</p>
+          <div class="product-meta">
+            <span class="product-category">Cinnamon Bun</span>
+            <span class="product-popularity">★★★★★</span>
+          </div>
         </details>
       </div>
 
-      <div class="product-card">
-        <img src="IMG/IMG-20250827-WA0007.jpg">
+      <div class="product-card" data-category="cinnamon" data-name="coconut almond bun" data-popularity="4">
+        <img src="IMG/rolls4-640x930.jpg" alt="Coconut and Almond Cinnamon Bun with toasted toppings">
         <details>
           <summary>Coconut & Almond Bun</summary>
-          <p>Sweet coconut paired with crunchy almonds.</p>
+          <p>Sweet coconut paired with crunchy almonds on our fluffy cinnamon bun base.</p>
+          <div class="product-meta">
+            <span class="product-category">Cinnamon Bun</span>
+            <span class="product-popularity">★★★★☆</span>
+          </div>
         </details>
       </div>
 
-      <div class="product-card">
-        <img src="IMG/IMG-20250827-WA0003.jpg">
+      <div class="product-card" data-category="cinnamon" data-name="choc chip bun" data-popularity="5">
+        <img src="IMG/WGC-Chocolate-Chip-Cinnamon-Rolls-2-copy.jpg" alt="Chocolate Chip Cinnamon Bun with melty chocolate">
         <details>
           <summary>Choc Chip Bun</summary>
-          <p>Delicious chocolate chips baked in soft bun.</p>
+          <p>Delicious chocolate chips baked into our soft, warm cinnamon bun.</p>
+          <div class="product-meta">
+            <span class="product-category">Cinnamon Bun</span>
+            <span class="product-popularity">★★★★★</span>
+          </div>
         </details>
       </div>
 
       <!-- Delish Delights -->
-      <div class="product-card">
-        <img src="IMG/IMG-20250811-WA0001.jpg">
+      <div class="product-card" data-category="cake" data-name="beer box cake" data-popularity="4">
+        <img src="IMG/saps-alphapharm-1.jpg"Beer Box Cake with unique flavor profile">
         <details>
           <summary>Beer Box Cake</summary>
-          <p>A unique cake with rich flavors and moist texture.</p>
+          <p>A unique cake with rich flavors and moist texture that surprises and delights.</p>
+          <div class="product-meta">
+            <span class="product-category">Cake</span>
+            <span class="product-popularity">★★★★☆</span>
+          </div>
         </details>
       </div>
 
-      <div class="product-card">
-        <img src="IMG/IMG-20250929-WA0018.jpg">
+      <div class="product-card" data-category="mini" data-name="mini cakes" data-popularity="4">
+        <img src="IMG/2579101_Cente_MINI_CONFETTI_Cakes_399-127956616d404189a1ffa5f31c447ddd.jpg" alt="Assorted Mini Cakes perfect for individual servings">
         <details>
           <summary>Mini Cakes</summary>
-          <p>Perfect small treats for any occasion.</p>
+          <p>Perfect small treats for any occasion, available in various flavors.</p>
+          <div class="product-meta">
+            <span class="product-category">Mini Treats</span>
+            <span class="product-popularity">★★★★☆</span>
+          </div>
         </details>
       </div>
 
-      <div class="product-card">
-        <img src="IMG/IMG-20250929-WA0020.jpg">
+      <div class="product-card" data-category="tart" data-name="milk tart tartlet" data-popularity="5">
+        <img src="IMG/O6A0313.jpg" alt="Traditional Milk Tart Tartlets in mini form">
         <details>
           <summary>Milk Tart Tartlet</summary>
-          <p>Traditional South African milk tart in mini form.</p>
+          <p>Traditional South African milk tart in convenient mini tartlet form.</p>
+          <div class="product-meta">
+            <span class="product-category">Tarts & Tartlets</span>
+            <span class="product-popularity">★★★★★</span>
+          </div>
         </details>
       </div>
 
-      <div class="product-card">
-        <img src="IMG/IMG-20250929-WA0019.jpg">
+      <div class="product-card" data-category="tart" data-name="blueberry cheesecake tart" data-popularity="5">
+        <img src="IMG/Blueberry-Cream-Cheese-Tartlets-Blueberry-Cheesecake-Mini-Tarts5.jpg" alt="Blueberry Cheesecake Tart with fresh berries">
         <details>
           <summary>Blueberry Cheesecake Tart</summary>
-          <p>Sweet and tangy cheesecake topped with fresh blueberries.</p>
+          <p>Sweet and tangy cheesecake topped with fresh, juicy blueberries in a buttery crust.</p>
+          <div class="product-meta">
+            <span class="product-category">Tarts & Tartlets</span>
+            <span class="product-popularity">★★★★★</span>
+          </div>
         </details>
+      </div>
+    </div>
+
+    <!-- No Results Message -->
+    <div id="noResults" class="no-results-message" style="display: none;">
+      <div class="no-results-content">
+        <h3>No products found</h3>
+        <p>Try adjusting your search terms or browse all categories.</p>
+        <button id="resetSearch" class="reset-btn">Show All Products</button>
       </div>
     </div>
 
   </main>
 
   <footer>
-    <p>&copy; 2025 The Littlest Homestead. All Rights Reserved.</p>
+    <p>&copy; 2025 The Littlest Homestead. All Rights Reserved. | Artisan Baked Goods</p>
   </footer>
 </body>
 </html>
